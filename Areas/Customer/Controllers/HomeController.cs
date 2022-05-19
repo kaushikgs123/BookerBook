@@ -1,9 +1,11 @@
 ﻿using BookerBook.Models;
+using BookerBook.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace BookerBook.Controllers
+namespace BookerBook.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
